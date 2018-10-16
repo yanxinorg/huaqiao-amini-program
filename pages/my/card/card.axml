@@ -1,0 +1,15 @@
+<view class="card">
+  <view class="card-top">
+    <text class="border-space">健康卡</text>
+    <icon class="border-space" type="clear" size="20"/>
+  </view>
+  <view class="card-body">
+    <view class="card-info border-space">
+      <text class="card-name">李云鹏</text>
+      <text class="card-id">B9461384898134</text>
+    </view>
+    <view class="border-space">
+      <button type="default" size="mini" onTap="defaultTap" plain> 设为默认 </button>
+    </view>
+  </view>
+</view>

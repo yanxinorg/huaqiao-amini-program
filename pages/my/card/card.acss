@@ -1,0 +1,50 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.card-top, .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-top {
+    width: 90%;
+    height: 50px;
+    border-radius: 8px 8px 0 0;
+    background-color: #20894d;
+    color: white;
+    font-size: 15pt;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    width: 90%;
+    height: 150px;
+    border-radius: 0 0 8px 8px;
+    background-color: #b9dec9;
+}
+
+.card-name{
+    color: black;
+    font-size: 20pt;
+}
+
+.card-id{
+    color: black;
+    font-size: 11pt;
+}
+
+.border-space {
+    margin: 0 10px;
+}

@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/services/location/location",
+    "pages/services/appointment/appointment",
+    "pages/services/recharge/recharge",
+    "pages/my/appointment/appointment",
+    "pages/my/balance/balance",
+    "pages/my/bill/bill",
+    "pages/my/card/card",
+    "pages/my/report/report"
+  ],
+  "window": {
+    "defaultTitle": "莆田华侨医院"
+  }
+}
