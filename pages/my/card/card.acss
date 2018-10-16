@@ -41,7 +41,7 @@
 }
 
 .card-id{
-    color: black;
+    color: grey;
     font-size: 11pt;
 }
 
