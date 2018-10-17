@@ -45,6 +45,8 @@
     font-size: 11pt;
 }
 
-.border-space {
-    margin: 0 10px;
+.add-new-card {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }

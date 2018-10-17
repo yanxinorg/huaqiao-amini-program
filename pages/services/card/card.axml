@@ -1,0 +1,14 @@
+<view>
+  <steps activeIndex="{{activeIndex}}" failIndex="{{failIndex}}" direction="{{direction}}" items="{{items}}"></steps>
+  <view>
+    <view class="section section_gap">
+      <view class="section__title">姓名：</view>
+      <input type="text" maxlength="64" placeholder="就诊卡持有人改名" />
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">手机号码：</view>
+      <input type="number" maxlength="11" placeholder="就诊卡登记的手机号码" />
+    </view>
+  </view>
+  <message title="{{title}}" subTitle="{{subTitle}}" type="success" mainButton="{{messageButton.mainButton}}" onTapMain="goBack"></message>
+</view>

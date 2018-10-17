@@ -1,3 +1,6 @@
 <lifestyle publicId="2018053160321437" />
 <grid onGridItemClick="onGridItemClick" columnNum="{{3}}" list="{{gridItems}}" />
-<button type="default" size="defaultSize" plain onTap="gotoHospitalNavigation" class="hospital-navigation"> 医院导航 </button>
+<button type="warn" size="defaultSize" onTap="gotoHospitalNavigation" class="hospital-navigation"> 医院导航 </button>
+<view>
+    <footer copyright="{{copyright}}" links="{{links}}" />
+</view>

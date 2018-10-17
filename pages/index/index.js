@@ -1,5 +1,10 @@
 Page({
   data: {
+    copyright: '© 2004-2017 pusudo.com. All rights reserved.',
+    links: [
+      // { text: '底部链接', url: '../../list/demo/index' },
+      // { text: '底部链接', url: '../../card/demo/index' },
+    ],
     gridItems: [
       {
         icon: '../../images/grid_appointment.png',
@@ -94,7 +99,6 @@ Page({
     });
   },
   onGridItemClick(evt) {
-    console.log(this.data.gridItems[evt.detail.index])
     if (this.data.gridItems[evt.detail.index].path) {
       my.navigateTo({
         url: this.data.gridItems[evt.detail.index].path

@@ -4,6 +4,7 @@
     "pages/services/location/location",
     "pages/services/appointment/appointment",
     "pages/services/recharge/recharge",
+    "pages/services/card/card",
     "pages/my/appointment/appointment",
     "pages/my/balance/balance",
     "pages/my/bill/bill",

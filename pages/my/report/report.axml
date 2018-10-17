@@ -1,3 +1,23 @@
-<view>
-  New Page
+<progress percent="100" active style="display: {{ displayProgress }};"/>
+<button type="warn" size="defaultSize" onTap="toggleDatePicker" loading="{{ isLoading }}" disabled="{{ isDisabled }}"> 查询日期 </button>
+<view style="display: {{ displayDatePicker }};">
+  <calendar type="range" onSelect="datepickerHandler" />
+  <text class="border-space">您也可以选择：</text>
+  <view class="default-range">
+    <button type="default" size="mini" plain data-range=1 onTap="selectDefaultDateRange"> 近一个月 </button>
+    <button type="default" size="mini" plain data-range=3 onTap="selectDefaultDateRange"> 近三个月 </button>
+    <button type="default" size="mini" plain data-range=6 onTap="selectDefaultDateRange"> 近半年 </button>
+  </view>
+</view>
+<view style="display: {{ displayList }};">
+  <list>
+    <view slot="header">      列表头部    </view>
+    <block a:for="{{items}}">
+      <list-item index="{{index}}" onClick="onItemClick" key="report-{{index}}">      {{item.title}}                        
+        <view class="am-list-brief">{{item.brief}}</view>
+        <view slot="extra">{{item.extra}}</view>
+      </list-item>
+    </block>
+    <view slot="footer">      列表尾部    </view>
+  </list>
 </view>

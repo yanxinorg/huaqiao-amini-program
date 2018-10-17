@@ -1,15 +1,20 @@
 Page({
-  data: {
+	data: {
 		cardList: [
 			{
 				name: '李云鹏',
 				id: 'B874869823465'
 			},
 			{
-				name: '滕蓉',
+				name: '滕蓉',
 				id: 'B874861483465'
 			}
 		]
 	},
-  onLoad() {},
+	onLoad() { },
+	bindCard() {
+		my.navigateTo({
+			url: '/pages/services/card/card'
+		});
+	}
 });

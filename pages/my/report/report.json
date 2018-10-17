@@ -1,1 +1,8 @@
-{}
+{
+    "defaultTitle": "我的报告单",
+    "usingComponents": {
+        "calendar": "mini-antui/es/calendar/index",
+        "list": "mini-antui/es/list/index",
+        "list-item": "mini-antui/es/list/list-item/index"
+    }
+}

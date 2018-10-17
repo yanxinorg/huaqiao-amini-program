@@ -94,3 +94,7 @@
   background-color: #ddd;
   margin-left: 30rpx;
 } */
+
+.border-space {
+    margin: 0 10px;
+}
