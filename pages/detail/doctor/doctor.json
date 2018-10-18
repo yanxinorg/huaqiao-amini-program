@@ -1,0 +1,6 @@
+{
+    "defaultTitle": "医生排班",
+    "usingComponents": {
+        "popup": "mini-antui/es/popup/index"
+    }
+}

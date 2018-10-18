@@ -1,0 +1,17 @@
+<view>
+  <view class="doctor-info" onTap="onTopShowPopup">
+    <image src="../../../images/hospital_head_image.jpg" mode="aspectFit" />
+    <view class="doctor-brief">
+      <text>{{ name }}</text>
+      <button type="warn" size="mini" disabled> {{ title }} </button>
+    </view>
+    <view>
+      <block a:for="{{ tags }}">
+        <button class="tag" type="default" plain size="mini"> {{ item }} </button>
+      </block>
+    </view>
+  </view>
+  <popup show="{{showPopupTop}}" position="top" onClose="onPopupClose">
+    <view style="background: #fff; display: flex; justify-content: center; align-items: center;">{{ introduction }}</view>
+  </popup>
+</view>

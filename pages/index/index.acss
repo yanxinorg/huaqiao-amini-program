@@ -1,4 +1,23 @@
 /* required by usingComponents */
+.hospital-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.hospital-info image{
+    width: 200rpx;
+    height: 200rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.hospital-info text{
+    font-weight: bold;
+}
+
 .hospital-navigation {
     position: absolute;
     bottom: 0;

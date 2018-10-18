@@ -1,1 +1,9 @@
-{}
+{
+    "defaultTitle": "预约挂号",
+    "usingComponents": {
+        "vtabs": "mini-antui/es/vtabs/index",
+        "vtab-content": "mini-antui/es/vtabs/vtab-content/index",
+        "list": "mini-antui/es/list/index",
+        "list-item": "mini-antui/es/list/list-item/index"
+    }
+}

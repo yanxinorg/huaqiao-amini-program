@@ -1,3 +1,20 @@
 <view>
-  New Page
+  <!-- <filter show="{{show}}" max="{{1}}" onChange="handleCallBack"><block a:for="{{items}}"><filter-item value="{{item.value}}" id="{{item.id}}" selected="{{item.selected}}"/></block></filter> -->
+  <vtabs tabs="{{tabs}}" swipeable="{{ true }}">
+    <block a:for="{{tabs}}">
+      <vtab-content anchor="{{item.anchor}}">
+        <view style="display: {{ displayList }};">
+          <list>
+            <block a:for="{{items}}">
+              <list-item index="{{index}}" data-apartment='98' onClick="onItemClick" key="doctor-{{index}}">      {{item.title}}                                
+                <view class="am-list-brief">{{item.brief}}</view>
+                <view slot="extra">{{item.extra}}</view>
+              </list-item>
+            </block>
+          </list>
+        </view>
+        <!-- <view style="height: 300px; border-bottom: 1px solid #000; box-sizing: border-box"><text class="sticky-title">content of {{item.title}}</text></view> -->
+      </vtab-content>
+    </block>
+  </vtabs>
 </view>

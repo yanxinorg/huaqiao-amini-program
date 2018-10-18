@@ -1,4 +1,8 @@
 <lifestyle publicId="2018053160321437" />
+<view class="hospital-info">
+    <image src="../../images/hospital_head_image.jpg" mode="aspectFit" />
+    <text>莆田华侨医院</text>
+</view>
 <grid onGridItemClick="onGridItemClick" columnNum="{{3}}" list="{{gridItems}}" />
 <button type="warn" size="defaultSize" onTap="gotoHospitalNavigation" class="hospital-navigation"> 医院导航 </button>
 <view>

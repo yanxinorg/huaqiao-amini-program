@@ -9,7 +9,8 @@
     "pages/my/balance/balance",
     "pages/my/bill/bill",
     "pages/my/card/card",
-    "pages/my/report/report"
+    "pages/my/report/report",
+    "pages/detail/doctor/doctor"
   ],
   "window": {
     "defaultTitle": "点滴软件"
