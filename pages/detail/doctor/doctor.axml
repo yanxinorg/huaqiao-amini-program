@@ -1,6 +1,7 @@
 <view>
-  <view class="doctor-info" onTap="onTopShowPopup">
-    <image src="../../../images/hospital_head_image.jpg" mode="aspectFit" />
+  <view class="doctor-info">
+		<image class="pull-down" src="../../../images/public_pull_down.png" />
+    <image class="hospital_head_image" src="../../../images/hospital_head_image.jpg" mode="aspectFit" />
     <view class="doctor-brief">
       <text>{{ name }}</text>
       <button type="warn" size="mini" disabled> {{ title }} </button>
@@ -11,6 +12,23 @@
       </block>
     </view>
   </view>
+	<view style="display: {{ displayList }};">
+	<list>
+		<view slot="header">      列表头部    
+		</view>
+		<block a:for="{{items}}">
+			<list-item index="{{index}}" onClick="onItemClick" key="report-{{index}}">      {{item.title}}                                
+				<view class="am-list-brief">{{item.brief}}
+				</view>
+				<view slot="extra">
+					<button type="warn" size="mini">预约</button>
+				</view>
+			</list-item>
+		</block>
+		<view slot="footer">      列表尾部    
+		</view>
+	</list>
+</view>
   <popup show="{{showPopupTop}}" position="top" onClose="onPopupClose">
     <view style="background: #fff; display: flex; justify-content: center; align-items: center;">{{ introduction }}</view>
   </popup>

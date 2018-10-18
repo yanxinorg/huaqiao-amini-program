@@ -1,6 +1,9 @@
 {
     "defaultTitle": "医生排班",
     "usingComponents": {
-        "popup": "mini-antui/es/popup/index"
-    }
+        "popup": "mini-antui/es/popup/index",
+				"list": "mini-antui/es/list/index",
+        "list-item": "mini-antui/es/list/list-item/index"
+    },
+		"pullRefresh": true
 }
