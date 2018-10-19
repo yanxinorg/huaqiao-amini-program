@@ -1,0 +1,12 @@
+.field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.hint {
+    margin: 100rpx 10px;
+    color: grey;
+}

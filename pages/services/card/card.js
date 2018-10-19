@@ -1,5 +1,6 @@
 Page({
   data: {
+    //  Steps: 步骤条
     activeIndex: 1,
     failIndex: 0,
     direction: 'vertical',
@@ -13,19 +14,43 @@ Page({
       title: '步骤3',
       description: '成功关联就诊卡。',
     }],
+    //  手机号验证
+    mobile: '',
     //  Message 结果页
-    title: "操作成功",
-    subTitle: "内容详情可折行，建议不超过两行",
+    title: "成功关联就诊卡",
+    subTitle: "新增就诊卡自动设置为默认卡，如需变更请点击我的就诊卡进行操作",
     messageButton: {
       mainButton: {
-        buttonText: "主要操作"
+        buttonText: "我的就诊卡"
       },
       subButton: {
-        buttonText: "辅助操作"
+        buttonText: "返回"
       }
-    }
+    },
+    btnNextText: '下一步'
   },
   onLoad() { },
+  bindKeyInput(evt) {
+    this.data.mobile = evt.detail.value;
+  },
+  //  下一步
+  next() {
+    switch (this.data.activeIndex) {
+      case 1:
+        this.setData({
+          mobile: this.data.mobile,
+          activeIndex: 2
+        });
+        break;
+      case 2:
+      this.setData({
+          activeIndex: 3
+        });
+        break;
+      default:
+        break;
+    }
+  },
   goBack() {
     my.navigateBack();
   }

@@ -98,3 +98,9 @@
 .border-space {
     margin: 0 10px;
 }
+
+.bottom-button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

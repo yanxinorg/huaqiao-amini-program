@@ -1,6 +1,7 @@
 {
     "usingComponents": {
         "steps": "mini-antui/es/steps/index",
-        "message": "mini-antui/es/message/index"
+        "message": "mini-antui/es/message/index",
+        "sms": "/components/sms/sms"
     }
 }

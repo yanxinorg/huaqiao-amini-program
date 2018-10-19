@@ -15,4 +15,4 @@
   </view>
 </view>
 </block>
-<button class="add-new-card" type="warn" size="defaultSize" onTap="bindCard"> 关联就诊卡 </button>
+<button class="bottom-button" type="warn" size="defaultSize" onTap="bindCard"> 关联就诊卡 </button>

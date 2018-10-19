@@ -1,14 +1,18 @@
-<view>
-  <steps activeIndex="{{activeIndex}}" failIndex="{{failIndex}}" direction="{{direction}}" items="{{items}}"></steps>
-  <view>
-    <view class="section section_gap">
-      <view class="section__title">姓名：</view>
-      <input type="text" maxlength="64" placeholder="就诊卡持有人改名" />
-    </view>
-    <view class="section section_gap">
-      <view class="section__title">手机号码：</view>
-      <input type="number" maxlength="11" placeholder="就诊卡登记的手机号码" />
-    </view>
+ 
+<steps activeIndex="{{activeIndex}}" failIndex="{{failIndex}}" direction="{{direction}}" items="{{items}}"></steps>
+<!-- 第一步 -->
+<view a:if="{{ activeIndex === 1 }}">
+  <view class="section-section-gap border-space">
+    <view class="section-title">姓名：</view>
+    <input type="text" maxlength="64" placeholder="就诊卡持有人改名" />
   </view>
-  <message title="{{title}}" subTitle="{{subTitle}}" type="success" mainButton="{{messageButton.mainButton}}" onTapMain="goBack"></message>
+  <view class="section-section-gap border-space">
+    <view class="section-title">手机号码：</view>
+    <input type="number" maxlength="11" placeholder="就诊卡登记的手机号码" value="{{ mobile }}" onInput="bindKeyInput" />
+  </view>
 </view>
+<!-- 第二步 -->
+<sms a:elif="{{ activeIndex === 2 }}" mobile="{{ mobile }}"></sms>
+<!-- 第三步 -->
+<message a:else title="{{title}}" subTitle="{{subTitle}}" type="success" mainButton="{{messageButton.mainButton}}" subButton="{{messageButton.subButton}}" onTapMain="gotoMyCards" onTapSub="goBack"></message>
+<button a:if="{{ activeIndex === 1 || activeIndex === 2 }}" class="bottom-button" type="warn" size="default" onTap="next"> {{ btnNextText }} </button>

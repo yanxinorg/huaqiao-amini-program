@@ -1,3 +1,20 @@
-<view>
-  New Component
+<view a:if="{{ mobile === '' }}">
+  <view class="field">
+    <input type="number" placeholder="请输入手机号码" auto-focus/>
+    <button type="default" plain size="mini" onTap="sendSms" disabled="{{ hasSent }}"> {{ btnSendText }} </button>
+  </view>
+  <view class="field">
+    <input type="number" maxlength="{{ maxInputLength }}" placeholder="请输入验证码" />
+  </view>
 </view>
+<view a:else>
+  <view class="field">
+    <input type="number" maxlength="{{ maxInputLength }}" placeholder="请输入验证码" />
+  </view>
+  <view class="field">
+    <button type="default" plain size="mini" onTap="sendSms" disabled="{{ hasSent }}"> {{ btnSendText }} </button>
+  </view>
+</view>
+<slot name="hint">
+  <view class="hint">提示：请勿将验证码告诉他人！</view>
+</slot>

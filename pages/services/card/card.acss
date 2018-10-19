@@ -1,0 +1,11 @@
+.section-section-gap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.section-title {
+    color: grey;
+    margin: 10px 7px;
+}

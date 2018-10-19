@@ -17,9 +17,3 @@
 .hospital-info text{
     font-weight: bold;
 }
-
-.hospital-navigation {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}

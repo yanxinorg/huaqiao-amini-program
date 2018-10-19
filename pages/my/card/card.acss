@@ -44,9 +44,3 @@
     color: grey;
     font-size: 11pt;
 }
-
-.add-new-card {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-}
