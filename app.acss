@@ -104,3 +104,22 @@
     bottom: 0;
     width: 100%;
 }
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.header image{
+    width: 200rpx;
+    height: 200rpx;
+    margin: 20rpx;
+    border-radius: 50%;
+}
+
+.header text{
+    font-weight: bold;
+}

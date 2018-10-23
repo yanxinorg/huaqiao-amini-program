@@ -1,18 +1,22 @@
-<block a:for='{{ cardList }}' a:key='{{ item.id }}'>
-<view class="card">
-  <view class="card-top">
-    <text class="border-space">健康卡</text>
-    <icon class="border-space" type="clear" size="20"/>
-  </view>
-  <view class="card-body">
-    <view class="card-info border-space">
-      <text class="card-name">{{ item.name }}</text>
-      <text class="card-id">{{ item.id }}</text>
-    </view>
-    <view class="border-space">
-      <button type="default" size="mini" onTap="defaultTap" plain> 设为默认 </button>
-    </view>
-  </view>
+<view class="header">
+  <image src="{{ avatar }}" mode="aspectFit" />
+  <text>{{ nickName }}</text>
 </view>
+<block a:for='{{ cardList }}' a:key='{{ item.id }}'>
+  <view class="card">
+    <view class="card-top">
+      <text class="border-space">健康卡</text>
+      <icon class="border-space" type="clear" size="20"/>
+    </view>
+    <view class="card-body">
+      <view class="card-info border-space">
+        <text class="card-name">{{ item.name }}</text>
+        <text class="card-id">{{ item.id }}</text>
+      </view>
+      <view class="border-space">
+        <button type="default" size="mini" onTap="defaultTap" plain> 设为默认 </button>
+      </view>
+    </view>
+  </view>
 </block>
 <button class="bottom-button" type="warn" size="defaultSize" onTap="bindCard"> 关联就诊卡 </button>

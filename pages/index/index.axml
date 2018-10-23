@@ -1,5 +1,5 @@
 <lifestyle publicId="2018053160321437" />
-<view class="hospital-info">
+<view class="header">
     <image src="../../images/hospital_head_image.jpg" mode="aspectFit" />
     <text>莆田华侨医院</text>
 </view>
