@@ -1,3 +1,5 @@
+import __OPEN_ALIPAY__ from '../../interface/open.alipay';
+
 Page({
   data: {
     copyright: '© 2004-2017 pusudo.com. All rights reserved.',
@@ -63,6 +65,28 @@ Page({
   onLoad(query) {
     // 页面加载
     console.info(`=========> Page onLoad with query: ${JSON.stringify(query)}`);
+    __OPEN_ALIPAY__
+      .httpRequest(
+        'https://www.pusudo.cn:614/backbone',
+        'GET'
+      )
+      .then(res => {
+        console.log(res);
+      })
+      .catch(error => {
+        console.error(error)
+        throw error;
+      })
+    // __OPEN_ALIPAY__
+    //   .setClipboard('TEST')
+    //   .then(__OPEN_ALIPAY__.getClipboard)
+    //   .then(res => {
+    //     console.log(res);
+    //   })
+    //   .catch(error => {
+    //     console.error(error)
+    //     throw error;
+    //   })
   },
   onReady() {
     // 页面加载完成
